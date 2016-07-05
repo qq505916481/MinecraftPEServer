@@ -1,8 +1,8 @@
 package net.fengberd.minecraftpe_server;
 
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
-import com.actionbarsherlock.app.SherlockActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+
 
 import android.os.*;
 import android.text.*;
@@ -10,7 +10,9 @@ import android.view.*;
 import android.widget.*;
 import android.view.View.*;
 
-public class ConsoleActivity extends SherlockActivity
+import android.app.Activity;
+
+public class ConsoleActivity extends Activity
 {
 	final static int CLEAR_CODE = 143;
 	final static int COPY_CODE = CLEAR_CODE + 1;

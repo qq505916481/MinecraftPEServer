@@ -5,6 +5,7 @@ import java.util.*;
 import java.nio.charset.Charset;
 
 import android.content.Context;
+import android.os.Environment;
 
 public final class ServerUtils
 {
@@ -26,9 +27,18 @@ public final class ServerUtils
 
 	public static String getDataDirectory()
 	{
-		String dir=android.os.Environment.getExternalStorageDirectory().getPath() + (MainActivity.nukkitMode?"/Nukkit":"/PocketMine");
-		new File(dir).mkdirs();
-		return dir;
+		boolean sdCardExist = Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
+		if(sdCardExist){
+            //May cause issues
+			String dir = "/storage/sdcard1" + (MainActivity.nukkitMode?"/Nukkit":"/PocketMine");
+			new File(dir).mkdirs();
+			return dir;
+		}else{
+			String dir=android.os.Environment.getExternalStorageDirectory().getPath() + (MainActivity.nukkitMode?"/Nukkit":"/PocketMine");
+			new File(dir).mkdirs();
+			return dir;
+		}
+		
 	}
 
 	public static void killServer()

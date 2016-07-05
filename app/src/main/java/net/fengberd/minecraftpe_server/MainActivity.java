@@ -14,11 +14,12 @@ import org.apache.http.*;
 import org.apache.http.impl.client.*;
 import org.apache.http.client.methods.*;
 
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
-import com.actionbarsherlock.app.SherlockActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.app.Activity;
 
-public class MainActivity extends SherlockActivity
+
+public class MainActivity extends Activity
 {
 	final static int FORCE_CLOSE_CODE = 143,
 		CONSOLE_CODE = FORCE_CLOSE_CODE + 1,

@@ -5,6 +5,8 @@
     <string name="activity_main">口袋服务器</string>
     <string name="activity_console">控制台</string>
 
+    <string name="button_ok">确定</string>
+    <string name="button_cancel">取消</string>
     <string name="button_send">发送</string>
     <string name="button_stop">关闭服务器</string>
     <string name="button_start">开启服务器</string>
@@ -18,7 +20,7 @@
     <string name="message_copied">已复制.</string>
     <string name="message_done">操作完成.</string>
     <string name="message_running">正在运行</string>
-    <string name="message_tap_open">点击打开 MinecraftPE 服务器</string>
+    <string name="message_tap_open">点击打开口袋服务器</string>
     <string name="message_installing">正在安装,请稍候...</string>
     <string name="message_downloading">正在下载 %s ...</string>
     <string name="message_install_fail">安装失败:</string>
@@ -26,18 +28,26 @@
     <string name="message_install_fail_path">安装失败,请将 "nukkit_library.tar.gz" 放入</string>
     <string name="message_no_artifacts">未找到构建成功的文件</string>
     <string name="message_select_repository">请选择%s源</string>
-
+    <string name="message_choose_php">选择PHP Binary文件</string>
+    <string name="message_unknown_error">未知错误</string>
+    
     <string name="label_management">服务器管理</string>
 	<string name="label_type">服务器类型</string>
 	<string name="label_console">控制台个性化</string>
 	<string name="label_console_fontsize">字体大小:</string>
+	<string name="label_pocketMine_to">把 PocketMine-MP.phar 或 src 文件夹放到 /sdcard/PocketMine</string>
+	<string name="label_nukkit_to">把 Nukkit.jar 放到 /sdcard/Nukkit</string>
 
 	<string name="menu_console">控制台</string>
     <string name="menu_kill">强制停止服务器</string>
     <string name="menu_clear">清空</string>
     <string name="menu_copy">复制</string>
     <string name="menu_install_php">安装PHP</string>
-    <string name="menu_install_php7">下载并安装PHP7</string>
+    <string name="menu_install_php_manually">手动安装PHP7</string>
     <string name="menu_install_java">安装Java</string>
-    <string name="menu_download">下载服务端</string>
+    <string name="menu_download_server">下载服务端</string>
+    <string name="menu_update_repos">从服务器更新源</string>
+
+    <string name="alert_install_php_title">注意</string>
+    <string name="alert_install_php_message">手动安装PHP是一个高级操作,你需要自己选择PHP可执行文件,不要选择任何你不能信任的人提供的PHP可执行文件,它们可能会对你的设备造成损害.\n如果你的PHP文件是压缩包,请先解压它</string>
 </resources>
